@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200&family=Silkscreen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200&family=Silkscreen&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            /* background-color: red; */
+            background-color: rgb(136, 134, 134);
+            /* width: 400px; */
+            font-family: 'Audiowide', cursive;
+            height: 100vh;
+            transition: transform 0.3s ease-in;
+            position: absolute;
+        }
+
+        .sidebar nav {
+            padding: 23px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 22px;
+            padding: 29px 0;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            /* background-color: yellow; */
+            width: 90vw;
+            /* background: linear-gradient( to bottom right,
+            #cc95c0, #d8d484,#7aa1d2); */
+        }
+
+        .container {
+            display: flex;
+            background-image: url(images/jbbJhEh.jpg);
+            height: 95vh;
+
+
+        }
+
+        .infocontainer {
+            /* background-color: rgb(201, 221, 54); */
+            height: 58vh;
+            width: 80vw;
+            margin: 47px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .korea {
+            color: aliceblue;
+            font-family: 'Silkscreen', cursive;
+            padding-left: 150px;
+            padding-right: 53px;
+            font-size: 4vw;
+            left: 70%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(-45deg, #ed213a, #ed213a, #93291e, #93291e, #e3dc00, #e3dc00);
+            background-size: 300%;
+            font-weight: 900;
+            letter-spacing: -5px;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 6s ease-in-out infinite;
+            -moz-animation: animated_text 65 ease-in-out infinite;
+            -webkit-animation: animated_text 65 ease-in-out infinite;
+
+
+        }
+
+        @keyframes animated_text {
+            0% {
+                background-position: 0px 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0px 50%;
+            }
+        }
+
+        .pic img {
+            display: flex;
+            color: white;
+            height: 75vh;
+        }
+
+        .info {
+            color: azure;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 36px;
+            margin-top: 146px
+                /* font-family:'Audiowide', cursive ; */
+        }
+
+        .k2 {
+
+            font-size: 70px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(-45deg, #ed213a, #ed213a, #93291e, #93291e, #acb6e5, #acb6e5);
+            background-size: 300%;
+            font-weight: 900;
+            letter-spacing: -5px;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 6s ease-in-out infinite;
+            -moz-animation: animated_text 65 ease-in-out infinite;
+            -webkit-animation: animated_text 65 ease-in-out infinite;
+        }
+
+        .k3 {
+
+            font-size: 50px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(-45deg, #ed213a, #ed213a, #93291e, #93291e, #acb6e5, #acb6e5);
+            background-size: 300%;
+            font-weight: 900;
+            letter-spacing: -5px;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 6s ease-in-out infinite;
+            -moz-animation: animated_text 65 ease-in-out infinite;
+            -webkit-animation: animated_text 65 ease-in-out infinite;
+        }
+
+        .intro {
+            font-size: 70px;
+        }
+
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Silkscreen', cursive;
+        }
+
+        .about {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+
+
+        .bn {
+            margin-top: 34px;
+            background-color: black;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 20px 50px;
+            border: 2px solid #ed213a;
+            border-radius: 10px;
+        }
+
+        .bn:hover {
+            animation: pulsate 1s ease-in-out;
+        }
+
+        @keyframes pulsate {
+            0% {
+                box-shadow: 0 0 25px #dd2476, 0 0 50px #ed213a
+            }
+        }
+
+        .sidebarGo {
+            transform: translate(-443px, 0);
+            position: absolute;
+        }
+
+        .hamburg {
+            position: absolute;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+        }
+
+        .cross {
+            margin-left: 100px;
+        }
+
+        @media (max-width: 1200px) {
+
+            /* .sidebar{
+            transform: translate(-443px, 0);
+            position: absolute;
+        } */
+            .pic {
+                display: none;
+
+            }
+
+            .infocontainer {
+                margin: 8px;
+            }
+        }
+
+        .socialmedia {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #000, #000, #000, #bbd2c5, #000);
+
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .social-icon li {
+            margin: 0 10px;
+        }
+
+        .social-icon li a {
+            font-size: 36px;
+            text-shadow: 0 0 0px;
+            transition: 0.3s ease;
+        }
+
+        .social-icon li a:hover {
+            text-shadow: 0 0 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="intro.html">My intro</a></li>
+                    <li> <a href="https://jayantlinktree.blogspot.com/">Blog</a></li>
+                    <li> <a href="services.html">Services</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburg">
+                <img class="ham" src="images/icons8-menu-48.png" alt="" style="width:28px ;">
+                <img class="cross" src="images/x(2).png" alt="" style="width: 25px;">
+            </div>
+            <div class="infocontainer">
+                <div class="info">
+                    <div class="intro"> <span class="k2">HI</span>, I am </div>
+                    <div class="name">Spector <span class="k3">18</span></div>
+                    <div class="about">Programmer, Designer, SketchArtist</div>
+                    <div class="button">
+                        <button class="bn">Download CV</button>
+
+
+                    </div>
+                </div>
+                <div class="pic"><img src="images/pngegg.png" alt=""> <span class="korea"> 자얀트 </span></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="socialmedia">
+        <ul class="social-icon">
+            <li><a href="https://instagram.com/jayant.prajapate.21?igshid=YmMyMTA2M2Y=" style="color: deeppink;"> <i
+                        class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/henej85891?t=SqQvQm2CP1Wa6Q5htPSPDg&s=08" style="color: deepskyblue;"> <i
+                        class="fab fa-twitter"></i></a></li>
+            <li><a href="https://m.facebook.com/?paipv=0&eav=AfZ0fir2rKXW1Vn11udwvyTfCvMxF1h_sXPIpCrOKAwqe0DIsqTIbppkTKI9A0XtZkA&_rdr&tbua=1"
+                    style="color: #3b5998;"> <i class="fab fa-facebook"></i></a></li>
+        </ul>
+    </div>
+    <script src="https://kit.fontawesome.com/0aeb8d7959.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

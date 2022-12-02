@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200&family=Silkscreen&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.sidebar {
+    /* background-color: red; */
+    background-color: rgb(136, 134, 134);
+    /* width: 400px; */
+    font-family: 'Audiowide', cursive;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 23px;
+}
+.sidebar nav{
+    margin-left: -45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 29px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    /* background: linear-gradient( to bottom right,
+    #cc95c0, #d8d484,#7aa1d2); */
+}
+
+.container {
+    display: flex;
+    
+    height: 100vh;
+
+
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0);
+    position: absolute;
+}
+
+.hamburg {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 110px;
+    margin-top: 8px;
+}
+
+@media (max-width: 1200px) {
+
+    /* .sidebar{
+    transform: translate(-443px, 0);
+    position: absolute;
+} */
+    .pic {
+        display: none;
+
+    }
+
+    .infocontainer {
+        margin: 8px;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+
+    /* padding: 40px; */
+    /* background: linear-gradient( to bottom right,
+    #81227A, #429AEE); */
+    height: 100vh;
+    
+}
+.container2{
+    
+    max-width: 1200px;
+    margin: auto;
+}
+span{
+    color: #348f50;
+}
+h1{
+    color: #56b4d3;
+}
+a .side{
+    text-decoration: none;
+    color: #5673c8;
+}
+a:hover{
+    color: #b5ac49;
+}
+p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.row{
+    margin: 0px -18px;
+    padding: 8px;
+}
+.row > .column{
+    padding: 6px;
+}
+.column{
+    float: left;
+    width: 25%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both
+}
+.content{
+    /* background-color: white; */
+    padding: 10px;
+    border: 1px solid gray;
+}
+@media  screen and (max-width: 850px) {
+    .column{
+        width: 50%;
+    }
+}
+@media screen and(max-width:400px){
+    .column{
+        width: 100%;
+    }
+}
